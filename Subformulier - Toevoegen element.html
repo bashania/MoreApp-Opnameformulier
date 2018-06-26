@@ -1,0 +1,74 @@
+style
+
+<table
+    class="main"
+    cellspacing="0"
+    cellpadding="5"
+>
+    <colgroup>
+        <col style="width:40%"></col>
+        <col style="width:60%"></col>
+    </colgroup>
+
+    <tbody>
+        <tr>
+            <td>
+                <div class="horizontal-field">
+                    <table class="table-horizontal">
+                        <colgroup>
+                            <col width="14.285714285714286%"></col>
+                            <col width="14.285714285714286%"></col>
+                            <col width="14.285714285714286%"></col>
+                            <col width="14.285714285714286%"></col>
+                            <col width="14.285714285714286%"></col>
+                            <col width="14.285714285714286%"></col>
+                            <col width="14.285714285714286%"></col>
+                        </colgroup>
+
+                        <thead>
+                            <tr>
+                                <td class="more-field-label">Merk</td>
+
+                                <td class="more-field-label">Omschrijving</td>
+
+                                <td class="more-field-label">Element</td>
+
+                                <td class="more-field-label">Bouwdeel</td>
+
+                                <td class="more-field-label">Aantal elementen</td>
+
+                                <td class="more-field-label">Aantal elementen</td>
+
+                                <td class="more-field-label">Opmerkingen</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>${merk}</td>
+
+                                <td>${omschrijving}</td>
+
+                                <td>
+                                    <img
+                                        src="${element}"
+                                        alt=""
+                                        style="max-width: 200px; max-height: 200px;"
+                                    >
+                                </td>
+
+                                <td>${bouwdeel}</td>
+
+                                <td>${aantalElementen1}</td>
+
+                                <td>${aantalElementen}</td>
+
+                                <td>${opmerkingen}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

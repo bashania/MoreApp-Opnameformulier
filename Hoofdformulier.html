@@ -1,0 +1,302 @@
+<style>
+    table.main, table.catalogue-table {
+        font-family: Verdana, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        color: #2b2a2b;
+        padding: 0;
+        width: 100%;
+    }
+
+    table.main .header th {
+        text-align: left;
+        vertical-align: middle;
+        background-color: #1dc4c2;
+        color: #ffffff;
+        border-radius: 4px;
+        line-height: 30px;
+    }
+
+    table.main th {
+        text-align: left;
+        font-weight: normal;
+    }
+
+    table.main td {
+        line-height: 150%;
+    }
+
+    body > table.main > tbody > tr:nth-child(even) {
+        background-color: #F9F9F9;
+    }
+
+    table.main > tbody > tr:first-child > td:first-child {
+        width: 40%;
+    }
+
+    .more-field-label {
+        font-weight: bold;
+        vertical-align: top;
+    }
+
+    table.main table {
+        margin-left: -3px;
+        padding: 0;
+    }
+
+    table.main .header-prefix th {
+        padding-top: 0;
+    }
+
+    table.main .header-suffix th {
+        padding-top: 0;
+    }
+
+    table.table-horizontal {
+        width: 100%;
+        font-size: 12px;
+    }
+    table.table-horizontal td {
+        vertical-align: top;
+        overflow-wrap: break-word;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+
+    .type-detail .main table.table-horizontal thead {
+        display: none;
+    }
+    .type-detail .main:first-of-type .table-horizontal thead {
+        display: table-header-group;
+    }
+
+        .hide-element {
+            display: none;
+        }
+
+    thead, tfoot {
+        display: table-row-group;
+    }
+    tr {
+        page-break-inside: avoid;
+    }
+</style>
+
+<table class="main" cellspacing="0" cellpadding="5">
+    <colgroup>
+        <col style="width:40%"></col>
+        <col style="width:60%"></col>
+    </colgroup>
+
+    <tbody>
+        <tr class="${_hideWhenHidden('0e0b60bd13b78487df05bc5a080b5896')}">
+            <td colspan="2">
+                <img src="https://api.moreapp.com/api/v1.0/downloads/secured?f=customerResources/5a05a1cd5da3d535062281bd&amp;h=66b7c196782f499b78f43bf356d4882afb345b25&amp;e=9223372036854775807"
+                    alt="" style="max-width: 200px; max-height: 200px;">
+            </td>
+        </tr>
+
+        <tr class="header-prefix ${_hideWhenHidden('fb8725b913aa241efbb63cb9a2ca0f15')}">
+            <th colspan="2"></th>
+        </tr>
+
+        <tr class="header ${_hideWhenHidden('fb8725b913aa241efbb63cb9a2ca0f15')}">
+            <th colspan="2">Projectgegevens</th>
+        </tr>
+
+        <tr class="header-suffix ${_hideWhenHidden('fb8725b913aa241efbb63cb9a2ca0f15')}">
+            <th colspan="2"></th>
+        </tr>
+
+        <tr class="${_hideWhenEmpty(projectnaam)}">
+            <td class="more-field-label">Projectnaam</td>
+
+            <td>${projectnaam}</td>
+        </tr>
+
+        <tr class="${_hideWhenEmpty(projectnummer)}">
+            <td class="more-field-label">Projectnummer</td>
+
+            <td>${projectnummer}</td>
+        </tr>
+
+        <tr class="${_hideWhenEmpty(overzichtfoto)}">
+            <td colspan="2">
+                <span class="more-field-label">Overzichtfoto</span>
+
+                <br>
+
+                <img src="${overzichtfoto}" alt="" style="max-width: 200px; max-height: 200px;">
+            </td>
+        </tr>
+
+        <tr class="${_hideWhenEmpty(locatie)}">
+            <td class="more-field-label">Locatie</td>
+
+            <td>${locatie}</td>
+        </tr>
+
+        <tr class="header-prefix ${_hideWhenHidden('2128f7f1b22b18c73947644702607913')}">
+            <th colspan="2"></th>
+        </tr>
+
+        <tr class="header ${_hideWhenHidden('2128f7f1b22b18c73947644702607913')}">
+            <th colspan="2">Voorzieningen</th>
+        </tr>
+
+        <tr class="header-suffix ${_hideWhenHidden('2128f7f1b22b18c73947644702607913')}">
+            <th colspan="2"></th>
+        </tr>
+
+        <tr class="${_hideWhenEmpty(benodigdeVoorzieningen)}">
+            <td colspan="2" class="type-detail"            >
+                <span class="more-field-label">Benodigde voorzieningen</span>
+                    <br>
+                    <!-- Invoegen Subformulier ${benodigdeVoorzieningen} -->
+                    <table class="main" cellspacing="0" cellpadding="5">
+                        <colgroup>
+                            <col style="width:40%"></col>
+                            <col style="width:60%"></col>
+                        </colgroup>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="horizontal-field">
+                                        <table class="table-horizontal">
+                                            <colgroup>
+                                                <col width="16.666666666666668%"></col>
+                                                <col width="16.666666666666668%"></col>
+                                                <col width="16.666666666666668%"></col>
+                                                <col width="16.666666666666668%"></col>
+                                                <col width="16.666666666666668%"></col>
+                                                <col width="16.666666666666668%"></col>
+                                            </colgroup>
+
+                                            <thead>
+                                                <tr>
+                                                    <td class="more-field-label">Voorziening</td>
+                                                    <td class="more-field-label">Overzicht</td>
+                                                    <td class="more-field-label">Opmerkingen</td>
+                                                    <td class="more-field-label">Hoogte</td>
+                                                    <td class="more-field-label">Breedte</td>
+                                                    <td class="more-field-label">Aantal m2</td>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>${voegVoorzieningToe}</td>
+
+                                                    <td>
+                                                        <img src="${overzichtBereikbaarheid}" alt="" style="max-width: 200px; max-height: 200px;">
+                                                    </td>
+                                                    <td>${opmerkingen}</td>
+                                                    <td>${hoogte}</td>
+                                                    <td>${breedte}</td>
+                                                    <td>${aantalM2}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>     
+                    <!-- Einde Subformulier ${benodigdeVoorzieningen} -->
+
+            </td>
+        </tr>
+
+        <tr class="header-prefix ${_hideWhenHidden('a6983864d4607a285beef0ae0e44e29d')}">
+            <th colspan="2"></th>
+        </tr>
+
+        <tr class="header ${_hideWhenHidden('a6983864d4607a285beef0ae0e44e29d')}">
+            <th colspan="2">Opname</th>
+        </tr>
+
+        <tr class="header-suffix ${_hideWhenHidden('a6983864d4607a285beef0ae0e44e29d')}">
+            <th colspan="2"></th>
+        </tr>
+
+        <tr class="${_hideWhenEmpty(meetgegevens)}">
+            <td colspan="2" class="type-detail"            >
+                <span class="more-field-label">Meetgegevens</span>
+
+                <br>
+                <!-- Invoegen Subformulier ${meetgegevens} -->
+                <table class="main" cellspacing="0" cellpadding="5">
+                    <colgroup>
+                        <col style="width:40%"></col>
+                        <col style="width:60%"></col>
+                    </colgroup>
+                
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="horizontal-field">
+                                    <table class="table-horizontal">
+                                        <colgroup>
+                                            <col width="14.285714285714286%"></col>
+                                            <col width="14.285714285714286%"></col>
+                                            <col width="14.285714285714286%"></col>
+                                            <col width="14.285714285714286%"></col>
+                                            <col width="14.285714285714286%"></col>
+                                            <col width="14.285714285714286%"></col>
+                                            <col width="14.285714285714286%"></col>
+                                        </colgroup>
+                
+                                        <thead>
+                                            <tr>
+                                                <td class="more-field-label">Merk</td>
+                                                <td class="more-field-label">Omschrijving</td>
+                                                <td class="more-field-label">Element</td>
+                                                <td class="more-field-label">Bouwdeel</td>
+                                                <td class="more-field-label">Aantal elementen</td>
+                                                <td class="more-field-label">Aantal elementen</td>
+                                                <td class="more-field-label">Opmerkingen</td>
+                                            </tr>
+                                        </thead>
+                
+                                        <tbody>
+                                            <tr>
+                                                <td>${merk}</td>
+                                                <td>${omschrijving}</td>
+                                                <td>
+                                                    <img src="${element}" alt="" style="max-width: 200px; max-height: 200px;">
+                                                </td>
+                                                <td>${bouwdeel}</td>
+                                                <td>${aantalElementen1}</td>
+                                                <td>${aantalElementen}</td>
+                                                <td>${opmerkingen}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Einde Subformulier ${meetgegevens} -->
+            </td>
+        </tr>
+
+        <tr class="header-prefix ${_hideWhenHidden('a0f2284d3d96c1ea42634d65fa4b73c1')}">
+            <th colspan="2"></th>
+        </tr>
+
+        <tr class="header ${_hideWhenHidden('a0f2284d3d96c1ea42634d65fa4b73c1')}">
+            <th colspan="2">Overig</th>
+        </tr>
+
+        <tr class="header-suffix ${_hideWhenHidden('a0f2284d3d96c1ea42634d65fa4b73c1')}">
+            <th colspan="2"></th>
+        </tr>
+
+        <tr class="${_hideWhenEmpty(opmerkingen)}">
+            <td class="more-field-label">Opmerkingen</td>
+
+            <td>${opmerkingen}</td>
+        </tr>
+    </tbody>
+</table>
